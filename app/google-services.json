@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "9727267223",
+    "project_id": "hacked-a6bbc",
+    "storage_bucket": "hacked-a6bbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9727267223:android:81a32ebbea55e89ef774d2",
+        "android_client_info": {
+          "package_name": "com.stark.hacked"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9727267223-5rikf0lvoa2luodke7t8tt9uopilt9o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBkmxihmi_tTXihaScO0fY9GNtaT1gYoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9727267223-5rikf0lvoa2luodke7t8tt9uopilt9o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
