@@ -87,11 +87,11 @@ class MainActivity : AppCompatActivity() {
 
             if (isXiaomi()) {
                 askPopupPermission()
-            } else {
+            }
                 val intent = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION)
                 Uri.parse("package:" + BuildConfig.APPLICATION_ID)
                 startActivityForResult(intent, 333)
-            }
+
 
         }
     }

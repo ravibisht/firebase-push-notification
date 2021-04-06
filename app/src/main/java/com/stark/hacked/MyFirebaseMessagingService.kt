@@ -1,6 +1,7 @@
 package com.stark.hacked
 
 import android.content.Intent
+import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.util.Log
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
@@ -20,7 +21,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
         super.onMessageReceived(remoteMessage)
-
         Log.d(TAG, "onMessageReceived:  r : " + remoteMessage.data.get("signal"))
         Log.d(TAG, "onMessageReceived: " + remoteMessage.notification?.title)
         Log.d(TAG, "onMessageReceived: " + remoteMessage.notification?.body)
@@ -32,7 +32,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         intent.putExtra(GET_DATA_FROM_NOTIFICATION, data)
         intent.putExtra(INTENT_ORIGIN, INTENT_ORIGIN_FIREBASE_SERVICE)
         intent.putExtra("song_url",songUrl)
-        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(intent)
     }
 
